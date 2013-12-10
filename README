@@ -1,3 +1,9 @@
-==CLPatchMatch==
+# CLPatchMatch #
 
 This is a Python and C OpenCL implementation of patch match image processing algorithm that runs in real-time.
+
+Patch match is a quick approximation algorithm for finding similar areas of one image in another one, developed by @ConnellyBarnes (http://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/index.php).
+
+The sequential patch match is used in Photoshop CS5 (http://www.adobe.com/technology/projects/patchmatch.html), but requires a few seconds even for small patches and minimal iterations. This OpenCL implementation is capable of performing more than a dozen iterations in less than a second, and 500 iterations in a few seconds.
+
+There is a demo mode included, so just download and try running it using Python.
